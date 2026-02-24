@@ -54,6 +54,6 @@ router.get('/', (req, res) => {
 });
 
 app.use(express.json());
-app.use(process.env.VERCEL_SERVICE_BASE_PATH || '/_/service-express', router);
+app.use(process.env.VERCEL_SERVICE_ROUTE_PREFIX, router);
 
 module.exports = app;

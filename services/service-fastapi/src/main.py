@@ -5,7 +5,7 @@ import httpx
 from fastapi import FastAPI, APIRouter, Request
 from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI(root_path=os.getenv("VERCEL_SERVICE_BASE_PATH") or "/_/service-fastapi")
+app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,

@@ -8,7 +8,6 @@ app = Flask(__name__)
 bp = Blueprint(
     "bp",
     __name__,
-    url_prefix=os.getenv("VERCEL_SERVICE_BASE_PATH") or "/_/service-flask",
 )
 
 SERVICE_ENV_MAP = {

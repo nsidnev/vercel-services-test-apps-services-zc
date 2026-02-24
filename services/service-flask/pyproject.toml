@@ -1,0 +1,9 @@
+[project]
+name = "service-flask"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "flask==3.1.2",
+    "httpx==0.28.1",
+    "werkzeug==3.1.5",
+]
